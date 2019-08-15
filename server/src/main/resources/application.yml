@@ -1,22 +1,10 @@
-#  <<
-#  Davinci
-#  ==
-#  Copyright (C) 2016 - 2019 EDP
-#  ==
-#  Licensed under the Apache License, Version 2.0 (the "License");
-#  you may not use this file except in compliance with the License.
-#  You may obtain a copy of the License at
-#        http://www.apache.org/licenses/LICENSE-2.0
-#   Unless required by applicable law or agreed to in writing, software
-#   distributed under the License is distributed on an "AS IS" BASIS,
-#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#   See the License for the specific language governing permissions and
-#   limitations under the License.
-#  >>
+#配置自己项目的绝对路径
+DAVINCI3_HOME:
+  /Users/ghy/workplace/zhihui
 
 file:
   userfiles-path: ${DAVINCI3_HOME}/userfiles/
-  web_resources: ${DAVINCI3_HOME}/davinci-ui/
+  web_resources: ${DAVINCI3_HOME}/zhihui-ui/
   phantomJs-path: ${DAVINCI3_HOME}/bin/phantom.js
 
 
@@ -52,7 +40,7 @@ spring:
 
 
   thymeleaf:
-    mode: HTML5
+    mode: HTML
     cache: true
     prefix: classpath:/templates/
     encoding: UTF-8
@@ -89,7 +77,7 @@ pagehelper:
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*Mapper.xml
   config-locations: classpath:mybatis/mybatis-config.xml
-  type-aliases-package: edp.davinci.model
+  type-aliases-package: com.huilan.zhihui.model
   configuration:
     map-underscore-to-camel-case: true
     use-generated-keys: true
@@ -97,7 +85,7 @@ mybatis:
 mapper:
   identity: MYSQL
   not-empty: false
-  mappers: edp.davinci.dao
+  mappers: com.huilan.zhihui.dao
 
 sql_template_delimiter: $
 

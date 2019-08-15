@@ -19,9 +19,9 @@
   -->
 
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="edp.davinci.dao.RelRoleProjectMapper">
+<mapper namespace="com.huilan.zhihui.dao.RelRoleProjectMapper">
 
-    <insert id="insert" parameterType="edp.davinci.model.RelRoleProject">
+    <insert id="insert" parameterType="com.huilan.zhihui.model.RelRoleProject">
         <selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">
             SELECT id from rel_role_project where `role_id` = #{roleId} and `project_id` = #{projectId}
         </selectKey>
@@ -103,7 +103,7 @@
                left join rel_role_user rru on rru.role_id = rrp.role_id
     </sql>
 
-    <select id="getMaxPermissions" resultType="edp.davinci.dto.projectDto.UserMaxProjectPermission">
+    <select id="getMaxPermissions" resultType="com.huilan.zhihui.dto.projectDto.UserMaxProjectPermission">
         <include refid="userMaxPermissionBaseSql"></include>
         WHERE rru.user_id = #{userId} and rrp.project_id in
         <foreach collection="projectIds" index="index" item="item" open="(" close=")" separator=",">
@@ -113,7 +113,7 @@
     </select>
 
 
-    <select id="getMaxPermission" resultType="edp.davinci.dto.projectDto.UserMaxProjectPermission">
+    <select id="getMaxPermission" resultType="com.huilan.zhihui.dto.projectDto.UserMaxProjectPermission">
         <include refid="userMaxPermissionBaseSql"></include>
         WHERE rru.user_id = #{userId} and rrp.project_id = #{projectId}
     </select>

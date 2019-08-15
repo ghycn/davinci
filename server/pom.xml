@@ -3,14 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edp.davinci</groupId>
-    <artifactId>davinci-server_3.01</artifactId>
+    <groupId>com.huilan</groupId>
+    <artifactId>server</artifactId>
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>edp.davinci</groupId>
-        <artifactId>davinci-parent_3.01</artifactId>
-        <version>0.3.1-SNAPSHOT</version>
+        <groupId>com.huilan</groupId>
+        <artifactId>zhihui-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -368,7 +368,7 @@
                     <classesDirectory>target/classes/</classesDirectory>
                     <archive>
                         <manifest>
-                            <mainClass>edp.DavinciServerApplication</mainClass>
+                            <mainClass>com.huilan.ZhihuiServerApplication</mainClass>
                             <!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
                             <useUniqueVersions>false</useUniqueVersions>
                             <addClasspath>false</addClasspath>

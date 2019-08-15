@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edp.davinci</groupId>
-    <artifactId>davinci-parent_3.01</artifactId>
-    <version>0.3.1-SNAPSHOT</version>
+    <groupId>com.huilan</groupId>
+    <artifactId>zhihui-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <parent>
@@ -159,8 +159,8 @@
                     <!-- config for license:update-file-header -->
                     <licenseName>apache_v2</licenseName>
                     <inceptionYear>2016</inceptionYear>
-                    <organizationName>EDP</organizationName>
-                    <projectName>Davinci</projectName>
+                    <organizationName>huilan</organizationName>
+                    <projectName>zhihui</projectName>
                     <roots>
                         <root>src/main/java</root>
                         <root>src/test/java</root>
