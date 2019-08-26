@@ -44,7 +44,7 @@ public class SwaggerConfiguration {
 
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.zhihui.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.huilan.zhihui.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .securitySchemes(Lists.newArrayList(apiKey()));

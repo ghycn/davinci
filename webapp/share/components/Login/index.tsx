@@ -59,7 +59,7 @@ class Login extends React.PureComponent<ILoginProps, ILoginStates> {
     return (
       <div className={`${styles.container} ${styles.share}`}>
         <Helmet title="Login" />
-        <img className={styles.logo} src={require('../../../app/assets/images/logo_light.svg')} />
+        <img className={styles.logo} src={require('../../../app/assets/images/logo_light.png')} />
         <div className={`${styles.window} ${loginStyles.window}`}>
           <LoginForm
             username={username}

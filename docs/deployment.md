@@ -209,7 +209,7 @@ x-pack-transport-xxx.jar`、`elasticsearch-sql-XXX.jar`（`xxx`表示你的 Elas
      alias_suffix: \"
   ```
 
-  ***注意***
+  **注意**
 
   - `keyword_prefix`和`keyword_suffix`表示关键字前缀和后缀，假设使用 mysql 数据库，并将`desc`关键字作为字段使用，那么你的查询语句应该是:
 

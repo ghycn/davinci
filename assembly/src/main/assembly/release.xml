@@ -50,9 +50,9 @@
         </fileSet>
         <fileSet>
             <directory>
-                ${project.parent.basedir}/davinci-ui
+                ${project.parent.basedir}/zhihui-ui
             </directory>
-            <outputDirectory>davinci-ui</outputDirectory>
+            <outputDirectory>zhihui-ui</outputDirectory>
         </fileSet>
 
     </fileSets>
