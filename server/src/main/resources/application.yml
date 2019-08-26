@@ -7,6 +7,14 @@ file:
   web_resources: ${DAVINCI3_HOME}/zhihui-ui/
   phantomJs-path: ${DAVINCI3_HOME}/bin/phantom.js
 
+server:
+  protocol: http
+  address: 60.205.186.13
+  port: 8987
+
+  servlet:
+    context-path: /
+
 
 spring:
   servlet:
@@ -21,6 +29,14 @@ spring:
     name: application
 
   datasource:
+    url: jdbc:mysql://60.205.186.13:3306/davinci0.3?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    initial-size: 2
+    min-idle: 1
+    max-wait: 60000
+    max-active: 10
     type: com.alibaba.druid.pool.DruidDataSource
     time-between-eviction-runs-millis: 30000
     min-evictable-idle-time-millis: 300000
@@ -37,6 +53,57 @@ spring:
 
   mvc:
     static-path-pattern: /**
+
+  ## redis config
+  ## please choose either of the two ways
+  redis:
+    isEnable: false
+
+    ## standalone config
+    host: 60.205.186.13
+    port: 6379
+
+    ## cluster config
+    #  cluster:
+    #       nodes:
+
+    password:
+    database: 0
+    timeout: 1000
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1
+        max-idle: 8
+        min-idle: 0
+
+  ## mail is one of the important configuration of the application
+  ## mail config cannot be null or empty
+  ## some mailboxes need to be set separately password for the SMTP service)
+  mail:
+    host: smtp.163.com
+    port: 465
+    username: gaohaiyang_cn@163.com
+    password: Gao123456
+    nickname: zhihui
+
+    properties:
+      smtp:
+        starttls:
+          enable: true
+          required: true
+        auth: true
+      mail:
+        smtp:
+          ssl:
+            enable: true
+
+  ldap:
+    urls:
+    username:
+    password:
+    base:
+    domainName:    # domainName 指 企业邮箱后缀，如企业邮箱为：xxx@example.com, 这里值为 '@example.com'
 
 
   thymeleaf:
@@ -90,3 +157,11 @@ mapper:
 sql_template_delimiter: $
 
 custom-datasource-driver-path: ${DAVINCI3_HOME}/config/datasource_driver.yml
+
+phantomjs_home: /Users/ghy/phantomjs-2.1.1-macosx/bin/phantomjs
+
+data-auth-center:
+  channels:
+    - name:
+      base-url:
+      auth-code:
