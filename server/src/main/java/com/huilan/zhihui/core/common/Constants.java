@@ -29,7 +29,7 @@ public class Constants extends Consts {
     /**
      * 用户激活 / 重发激活邮件主题
      */
-    public static final String USER_ACTIVATE_EMAIL_SUBJECT = "[Davinci] 用户激活";
+    public static final String USER_ACTIVATE_EMAIL_SUBJECT = "[智汇BI] 用户激活";
 
     /**
      * 用户默认Organization描述
@@ -63,7 +63,7 @@ public class Constants extends Consts {
      * inviter username
      * organization
      */
-    public static final String INVITE_ORG_MEMBER_MAIL_SUBJECT = "[Davinci] %s has invited you to join the %s organization";
+    public static final String INVITE_ORG_MEMBER_MAIL_SUBJECT = "[智汇BI] %s has invited you to join the %s organization";
 
     /**
      * 邀请组织成员邮件模板

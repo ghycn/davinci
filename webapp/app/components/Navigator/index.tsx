@@ -66,15 +66,15 @@ export function Navigator (props: INavigatorProps) {
         </div>
       </div>
       <ul className={styles.tools}>
-        <li>
-          <DownloadList />
-        </li>
-        <li>
-          <Icon type="file-text" onClick={goDoc} />
-        </li>
-        <li>
-          <Icon type="github" onClick={goGithub}/>
-        </li>
+        {/*<li>*/}
+        {/*  <DownloadList />*/}
+        {/*</li>*/}
+        {/*<li>*/}
+        {/*  <Icon type="file-text" onClick={goDoc} />*/}
+        {/*</li>*/}
+        {/*<li>*/}
+        {/*  <Icon type="github" onClick={goGithub}/>*/}
+        {/*</li>*/}
         <li>
           <Dropdown overlay={menu} trigger={['click']} placement="bottomCenter">
             <Icon type="user" />

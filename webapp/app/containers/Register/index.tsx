@@ -147,7 +147,7 @@ export class Register extends React.PureComponent<IRegisterProps, IRegisterState
             注册
           </button>
           <p className={styles.tips}>
-            <span>已有davinci账号， </span>
+            <span>已有智汇BI账号， </span>
             <a href="javascript:;" onClick={this.toLogin}>点击登录</a>
           </p>
         </div>

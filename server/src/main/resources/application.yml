@@ -1,19 +1,23 @@
 #配置自己项目的绝对路径
 DAVINCI3_HOME:
-  /Users/ghy/workplace/zhihui
+  /Users/smileleo/workspace/minglue/davinci
+#  /Users/ghy/workplace/zhihui
 
 file:
   userfiles-path: ${DAVINCI3_HOME}/userfiles/
-  web_resources: ${DAVINCI3_HOME}/zhihui-ui/
+#  web_resources: ${DAVINCI3_HOME}/zhihui-ui/
+  web_resources: ${DAVINCI3_HOME}/webapp/app/
   phantomJs-path: ${DAVINCI3_HOME}/bin/phantom.js
 
 server:
   protocol: http
-  address: 60.205.186.13
-  port: 8987
-
+  address: localhost
+  port: 8080
+#  address: 60.205.186.13
+#  port: 8987
   servlet:
-    context-path: /
+    context-path:
+#      context-path: /
 
 
 spring:
@@ -158,7 +162,8 @@ sql_template_delimiter: $
 
 custom-datasource-driver-path: ${DAVINCI3_HOME}/config/datasource_driver.yml
 
-phantomjs_home: /Users/ghy/phantomjs-2.1.1-macosx/bin/phantomjs
+#phantomjs_home: /Users/ghy/phantomjs-2.1.1-macosx/bin/phantomjs
+phantomjs_home: /usr/local/Caskroom/phantomjs/2.1.1/phantomjs-2.1.1-macosx/bin/phantomjs
 
 data-auth-center:
   channels:

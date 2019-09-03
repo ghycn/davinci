@@ -861,10 +861,10 @@ export class Projects extends React.PureComponent<IProjectsProps, IProjectsState
       <div className={wrapper}>
         <div className={styles.search}>
           <div  className={styles.searchWrapper}>
-            <label htmlFor="newtab-search-text" className={styles.searchLabel}/>
+            {/*<label htmlFor="newtab-search-text" className={styles.searchLabel}/>*/}
             <input
               id="newtab-search-text"
-              placeholder="Search the Davinci"
+              placeholder="Search"
               title="Search the Web"
               autoComplete="off"
               onFocus={this.bindDocumentKeypress}

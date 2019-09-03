@@ -17,10 +17,10 @@ export function App (props: IAppProps) {
   return (
     <div>
       <Helmet
-        titleTemplate="%s - Davinci"
-        defaultTitle="Davinci Web Application"
+        titleTemplate="%s - 智汇BI"
+        defaultTitle="智汇BI Web Application"
         meta={[
-          { name: 'description', content: 'Davinci web application built for data visualization' }
+          { name: 'description', content: '智汇BI web application built for data visualization' }
         ]}
       />
       {React.Children.toArray(props.children)}

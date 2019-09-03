@@ -113,7 +113,7 @@ export class Login extends React.PureComponent<ILoginProps, ILoginStates> {
         </button>
         <p className={styles.tips}>
           <span>还没有账号？ </span>
-          <a href="javascript:;" onClick={this.toSignUp}>注册davinci账号</a>
+          <a href="javascript:;" onClick={this.toSignUp}>注册智汇BI账号</a>
         </p>
       </div>
     )
