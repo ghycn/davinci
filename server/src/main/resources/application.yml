@@ -1,12 +1,12 @@
 #配置自己项目的绝对路径
 DAVINCI3_HOME:
-  /Users/smileleo/workspace/minglue/davinci
+  /Users/smileleo/workspace/minglue/code/davinci
 #  /Users/ghy/workplace/zhihui
 
 file:
   userfiles-path: ${DAVINCI3_HOME}/userfiles/
-#  web_resources: ${DAVINCI3_HOME}/zhihui-ui/
-  web_resources: ${DAVINCI3_HOME}/webapp/app/
+  web_resources: ${DAVINCI3_HOME}/zhihui-ui/
+#  web_resources: ${DAVINCI3_HOME}/webapp/app/
   phantomJs-path: ${DAVINCI3_HOME}/bin/phantom.js
 
 server:
