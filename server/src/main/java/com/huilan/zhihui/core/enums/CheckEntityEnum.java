@@ -3,16 +3,16 @@
 package com.huilan.zhihui.core.enums;
 
 public enum CheckEntityEnum {
-    USER("user", "userService", "User"),
-    PROJECT("project", "projectService", "Project"),
-    ORGANIZATION("organization", "organizationService", "Organization"),
-    SOURCE("source", "sourceService", "Source"),
-    VIEW("view", "viewService", "View"),
-    WIDGET("widget", "widgetService", "Widget"),
-    DISPLAY("display", "displayService", "Display"),
-    DASHBOARD("dashboard", "dashboardService", "Dashboard"),
-    DASHBOARDPORTAL("dashboardPortal", "dashboardPortalService", "DashboardPortal"),
-    CRONJOB("cronJob", "cronJobService", "CronJob");
+    USER("user", "userService", "com.huilan.zhihui.model.User"),
+    PROJECT("project", "projectService", "com.huilan.zhihui.model.Project"),
+    ORGANIZATION("organization", "organizationService", "com.huilan.zhihui.model.Organization"),
+    SOURCE("source", "sourceService", "com.huilan.zhihui.model.Source"),
+    VIEW("view", "viewService", "com.huilan.zhihui.model.View"),
+    WIDGET("widget", "widgetService", "com.huilan.zhihui.model.Widget"),
+    DISPLAY("display", "displayService", "com.huilan.zhihui.model.Display"),
+    DASHBOARD("dashboard", "dashboardService", "com.huilan.zhihui.model.Dashboard"),
+    DASHBOARDPORTAL("dashboardPortal", "dashboardPortalService", "com.huilan.zhihui.model.DashboardPortal"),
+    CRONJOB("cronJob", "cronJobService", "com.huilan.zhihui.model.CronJob");
 
     private String source;
     private String service;
